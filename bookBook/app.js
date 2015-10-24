@@ -20,7 +20,8 @@ app.config(function($stateProvider, $urlRouterProvider){
 
         .state('showcase', {
           url: '/',
-          templateUrl: 'views/showcase.html'
+          templateUrl: 'views/showcase.html',
+          controller: 'showcaseController'
         })
 
         .state('landing', {
