@@ -164,5 +164,30 @@ body > .container {
 
 .profileSideButton {
 
-  width: 200px;
+  width: 220px;
 }
+
+.profileIcon {
+  width: 20px;
+  float: left;
+}
+
+/*
+
+@keyframes expand{
+  0% {
+    min-height: 0px;
+  }
+  100% {
+    min-height: 250px;
+  }
+}
+.expander {
+
+
+  overflow: hidden;
+  animation: expand 1s ease-in-out;
+
+}
+
+*/
