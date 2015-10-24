@@ -7,6 +7,7 @@
             <span class="price pull-right">{{( book.price || 'Free') | currency}}</span>
         </div>
         <div class="actions" ng-show="editable">
+            <a href="mailto:{{ book.owner }}@pdx.edu?subject=BookBook" class="btn btn-info" title="mail"><span class="glyphicon glyphicon-envelope"></span></a>
             <button class="btn btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>
             <button class="btn btn-default" title="Edit"><span class="glyphicon glyphicon-pencil"></span></button>
         </div>
