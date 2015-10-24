@@ -1,0 +1,13 @@
+<ul class="book-list">
+    <li class="book" ng-repeat="book in books">
+        <div class="book-info">
+            <span class="title">{{ book.title }}</span>
+            <span class="isbn">{{ book.isbn }}</span>
+            <span class="author">{{ book.author }}</span>
+        </div>
+        <div class="actions" ng-show="editable">
+            <button class="btn btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>
+            <button class="btn btn-default" title="Edit"><span class="glyphicon glyphicon-pencil"></span></button>
+        </div>
+    </li>
+</ul>
