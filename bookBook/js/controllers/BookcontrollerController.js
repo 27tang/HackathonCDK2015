@@ -11,6 +11,7 @@ app.controller('BookcontrollerCtrl', ['$scope', 'mockService', function ($scope,
     mockService.getBooks().then(function (data) {
         $scope.books = data;
     });
+
     mockService.getUsers().then(function (data) {
         $scope.users = data;
     });

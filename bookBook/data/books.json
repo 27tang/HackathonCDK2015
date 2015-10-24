@@ -4,7 +4,7 @@
     "isbn": 978113318660,
     "author": "David Lay",
     "condition": "poor",
-    "price": 50,
+    "price": 35,
     "status": "selling"
   },
   {
@@ -12,7 +12,7 @@
     "isbn": 9781563187790,
     "author": "Bob Ross",
     "condition": "new",
-    "price": 30,
+    "price": 15,
     "status": "selling"
   },
   {
@@ -20,7 +20,7 @@
     "isbn": 9341133187790,
     "author": "Collin Errie",
     "condition": "ok",
-    "price": 70,
+    "price": 23,
     "status": "selling"
   },
   {
