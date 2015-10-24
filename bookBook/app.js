@@ -14,9 +14,14 @@ app.config(function($httpProvider){
 });
 
 app.config(function($stateProvider, $urlRouterProvider){
-    $urlRouterProvider.otherwise('/landing');
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
+
+        .state('showcase', {
+          url: '/',
+          templateUrl: 'views/showcase.html'
+        })
 
         .state('landing', {
             url: '/landing',
