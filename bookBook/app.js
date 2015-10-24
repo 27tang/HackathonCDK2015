@@ -89,10 +89,7 @@ app.config(function($stateProvider, $urlRouterProvider){
             url:'/newUserSetup',
             templateUrl: 'views/newUserSetup.html',
             controller: 'newUserSetupController'
-      })
-
-
-
+      });
 
 
 
