@@ -1,9 +1,41 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
 <div>
 
-  <div> {{userName}} </div>
+  <div class="col-xs-12 col-sm-8">
+    <h2>{{user.name}}</h2>
+    <p><strong>Major: </strong> {{user.major}} </p>
+    <p><strong>Courses: </strong>
+    <div ng-repeat="course in user.course_history"> {{ course }} </div>
+    </p>
+    <p><strong>About Me: </strong>
+        {{user.aboutMe}}
+    </p>
+  </div>
 
-  <div> {{courseInfo}}</div>
-
-
-
+  <div class="col-xs-12 col-sm-4 text-center">
+    <figure>
+      <figcaption class="ratings">
+        <p>Ratings
+          <a href="#">
+            <span class="fa fa-star"></span>
+          </a>
+          <a href="#">
+            <span class="fa fa-star"></span>
+          </a>
+          <a href="#">
+            <span class="fa fa-star"></span>
+          </a>
+          <a href="#">
+            <span class="fa fa-star"></span>
+          </a>
+          <a href="#">
+            <span class="fa fa-star-o"></span>
+          </a>
+        </p>
+      </figcaption>
+    </figure>
+  </div>
 </div>
+
+

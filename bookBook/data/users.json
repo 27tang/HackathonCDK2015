@@ -12,7 +12,10 @@
     "books": [
       1,
       2
-    ]
+    ],
+    "aboutMe":"I like to go on BookBook and browse for hours, just because it's fun.",
+    "wtf": "something"
+
   },
   {
     "username": "marchuk3",
@@ -27,7 +30,9 @@
     "books": [
       3,
       4
-    ]
+    ],
+    "aboutMe": "I don't think you want to know anything about me. But ask."
+
   },
   {
     "username": "ytang",
@@ -40,7 +45,9 @@
     ],
     "books": [
       6
-    ]
+    ],
+    "aboutMe": "BookBook changed my life. I used to pay out the A at the bookstore, "
+
   },
   {
     "username": "jschmoe",
@@ -53,6 +60,8 @@
     ],
     "books": [
       5
-    ]
+    ],
+    "aboutMe:": "I met my best friend on BookBook. Incidentally we are married now. Therefore we are no longer best friends. But it's still good."
+
   }
 ]

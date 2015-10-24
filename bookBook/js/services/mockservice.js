@@ -34,5 +34,14 @@ app.service('mockService', function ($http, $q) {
 
     this.addUser = function (user) {
         userList.push(user);
+    };
+
+
+    this.getUserFromName = function(userName) {
+      for (var i = 0; i < userList.length; i++){
+        if(userList[i].username == userName){
+          return userList[i];
+        }
+      };
     }
 });

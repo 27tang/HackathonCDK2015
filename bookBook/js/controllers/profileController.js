@@ -1,11 +1,14 @@
-app.controller('profileController', function($scope, $state, $stateParams){
+app.controller('profileController', ['$scope', '$state', 'mockService', function($scope, $state, mockService ){
 
+    $scope.user = {};
     $scope.userName = $state.params.userName;
-    console.log($scope.userName);
+    mockService.getUsers().then(function(users){
+
+      $scope.user = mockService.getUserFromName($scope.userName);
+      //console.log(mockService.getUserFromName($scope.userName));
+    });
 
 
-    $scope.name = "John";
-    $scope.courseInfo = "Current courses: CS201, CS163";
 
 
-});
+}]);
