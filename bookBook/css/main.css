@@ -68,10 +68,12 @@ body > .container {
 #sellSearch {
   text-align: center;
 }
-#buySearch > h1 {
+#buySearch > h1,
+#sellSearch > h1{
   margin-bottom: 0.5em;
 }
-#buySearch > a {
+#buySearch > a,
+#sellSearch > a {
   display: block;
   margin-top: 1.5em;
 }
