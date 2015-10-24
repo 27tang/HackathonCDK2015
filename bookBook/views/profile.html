@@ -2,7 +2,7 @@
 
 <div>
 
-  <div class="col-xs-12 col-sm-8">
+  <div class="col-xs-12 col-sm-7">
     <h2>{{user.name}}</h2>
 
 
@@ -24,7 +24,7 @@
     </p>
   </div>
 
-  <div class="col-xs-12 col-sm-4 text-center">
+  <div class="col-xs-12 col-sm-5 text-center">
     <figure>
       <figcaption class="ratings">
         <p>Ratings
@@ -46,24 +46,23 @@
         </p>
       </figcaption>
     </figure>
+    <div ui-view style="text-align: left;">
+      <div>
+        <button class="btn btn-default profileSideButton">
+          <span style="color: #48a400;" class ="glyphicon glyphicon-send profileIcon"></span>
+          Message {{user.name}}
+        </button> <br/><br/>
+        <button class="btn btn-default profileSideButton" ui-sref=".sellView" id="sellView" ng-click="expand()">
+          <span style="color: #000079;" class ="glyphicon glyphicon-book profileIcon"></span>
+          View Books for Sale
+        </button> <br/><br/>
+        <button class="btn btn-default profileSideButton" ui-sref=".wishView">
+          <span style="color: #6f0000;"class ="glyphicon glyphicon-book profileIcon"></span>
+          View Wish-list
+        </button>
+      </div>
 
-  </div>
-  <div ui-view>
-    <div>
-      <button class="btn btn-default profileSideButton">
-        <span style="color: #48a400;" class ="glyphicon glyphicon-send profileIcon"></span>
-        Message {{user.name}}
-      </button> <br/><br/>
-      <button class="btn btn-default profileSideButton" ui-sref=".sellView" id="sellView" ng-click="expand()">
-        <span style="color: #000079;" class ="glyphicon glyphicon-book profileIcon"></span>
-        View Books for Sale
-      </button> <br/><br/>
-      <button class="btn btn-default profileSideButton" ui-sref=".wishView">
-        <span style="color: #6f0000;"class ="glyphicon glyphicon-book profileIcon"></span>
-        View Wish-list
-      </button>
     </div>
-
   </div>
 </div>
 
