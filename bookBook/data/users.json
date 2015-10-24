@@ -1,0 +1,58 @@
+[
+  {
+    "username": "csnow",
+    "name": "Chance Snow",
+    "major": "CS",
+    "course_history": [
+      "CS350",
+      "CS311",
+      "CS321",
+      "MTH261"
+    ],
+    "books": [
+      1,
+      2
+    ]
+  },
+  {
+    "username": "marchuk3",
+    "name": "Max Marchuk",
+    "major": "MTH",
+    "course_history": [
+      "MTH261",
+      "ECE341",
+      "CS486",
+      "CS300"
+    ],
+    "books": [
+      3,
+      4
+    ]
+  },
+  {
+    "username": "ytang",
+    "name": "Xuan Tang",
+    "major": "CS",
+    "course_history": [
+      "CS321",
+      "CS322",
+      "CS486"
+    ],
+    "books": [
+      6
+    ]
+  },
+  {
+    "username": "jschmoe",
+    "name": "Joe Schmoe",
+    "major": "CS",
+    "course_history": [
+      "CS321",
+      "CS322",
+      "CS486"
+    ],
+    "books": [
+      5
+    ]
+  }
+]
