@@ -8,5 +8,14 @@ app.service('mockService', function ($http, $q) {
         });
 
         return def.promise;
-    }
+    };
+
+    this.getUsers = function () {
+        var def = $q.defer();
+        $http.get('data/users.json').success(function (data) {
+            def.resolve(data);
+        });
+
+        return def.promise;
+    };
 });
