@@ -15,6 +15,8 @@ app.controller('BookcontrollerCtrl', ['$scope', 'mockService', function ($scope,
         $scope.users = data;
     });
 
+    $scope.editable = false;
+
     $scope.addUser = function (username, name, major, course_history) {
         var user = {
             "username": username,

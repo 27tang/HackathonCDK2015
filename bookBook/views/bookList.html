@@ -1,5 +1,6 @@
 <div>
-    <div class="col-md-4" ng-repeat="book in books">
+    <!--div class="col-md-4" ng-repeat="book in books">
         <p>ISBN: {{book.isbn}} Status: {{book.status}}</p>
-    </div>
+    </div-->
+    <book-list books="books" editable="{{editable}}"></book-list>
 </div>
