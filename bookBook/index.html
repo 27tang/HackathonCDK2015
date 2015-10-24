@@ -40,7 +40,8 @@
         </form>
         <div ng-show="onSearchPage" style="flex: 1;"></div>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Login</a></li>
+          <li ng-hide="loggedIn"><a ng-click="login()" ui-sref="odinLoginPage">Login</a></li>
+          <li ng-show="!onLoginPage && loggedIn"><a href="#/profile/trakin">Profile</a></li>
         </ul>
       </div>
     </div>
@@ -73,6 +74,7 @@
 <script src="js/directives/bookListDirective.js"></script>
 
 <script src="js/controllers/navbarController.js"></script>
+<script src="js/controllers/showcaseController.js"></script>
 <script src="js/controllers/landingController.js"></script>
 <script src="js/controllers/buySearchController.js"></script>
 <script src="js/controllers/buySearchResultsController.js"></script>

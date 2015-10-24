@@ -4,6 +4,7 @@ app.service('mockService', function ($http, $q) {
     var bookList = [];
     var userList = [];
     var searchResults = null;
+    var loggedIn = false;
 
     this.getBooks = function () {
         var def = $q.defer();
@@ -22,6 +23,14 @@ app.service('mockService', function ($http, $q) {
         });
 
         return def.promise;
+    };
+
+    this.login = function () {
+        loggedIn = true;
+    };
+
+    this.loggedIn = function () {
+        return loggedIn;
     };
 
     this.addBook = function (book, username) {
