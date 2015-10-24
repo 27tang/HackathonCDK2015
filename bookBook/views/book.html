@@ -1,1 +1,2 @@
-<div book="book"></div>
+<h1 ng-hide="!creating && !editing">{{creating ? 'Sell a' : 'Edit'}} Book</h1>
+<div book="book" editing="{{editing}}" creating="{{creating}}"></div>

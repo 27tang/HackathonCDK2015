@@ -60,9 +60,9 @@ app.config(function($stateProvider, $urlRouterProvider){
             controller: 'BookcontrollerCtrl'
         })
         .state('book', {
-            url: '/profile/:isbn',
+            url: '/book/:isbn',
             templateUrl: 'views/book.html',
-            controller: 'BookCtrl'
+            controller: 'bookController'
         })
         .state('newUserSetup', {
             url:'/newUserSetup',
