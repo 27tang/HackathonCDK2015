@@ -2,7 +2,8 @@
   "name": "BookBook",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap": "^3.2.0"
+    "bootstrap": "^3.2.0",
+    "underscore": "~1.8.3"
   },
   "appPath": ".",
   "moduleName": "BookBook"

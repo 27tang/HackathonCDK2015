@@ -19,7 +19,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
 #js-navbar-collapse {
@@ -51,6 +50,7 @@ form.search button{
   border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -68,11 +68,13 @@ body > .container {
 #sellSearch {
   text-align: center;
 }
-#buySearch > h1 {
+#buySearch > h1,
+#sellSearch > h1{
   margin-bottom: 0.5em;
 }
-#buySearch > a {
-  display: block;
+#buySearch > a,
+#sellSearch > a {
+  display: inline-block;
   margin-top: 1.5em;
 }
 
