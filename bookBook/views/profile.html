@@ -48,20 +48,23 @@
     </figure>
 
   </div>
-  <div style="text-align: right;">
-  <button class="btn btn-default profileSideButton">
-  <span class ="glyphicon glyphicon-envelope"> </span>
-    Message {{user.name}}
-  </button> <br/><br/>
-  <button class="btn btn-default profileSideButton">
-    <span class ="glyphicon glyphicon-book "> </span>
-    View Books for Sale
-  </button> <br/> <br/>
-  <button class="btn btn-default profileSideButton">
-    <span class ="glyphicon glyphicon-book "> </span>
-    View Wish-list
-    </button>
+  <div ui-view>
+    <div>
+      <button class="btn btn-default profileSideButton">
+        <span style="color: #48a400;" class ="glyphicon glyphicon-send profileIcon"></span>
+        Message {{user.name}}
+      </button> <br/><br/>
+      <button class="btn btn-default profileSideButton" ui-sref=".sellView">
+        <span style="color: #000079;" class ="glyphicon glyphicon-book profileIcon"></span>
+        View Books for Sale
+      </button> <br/><br/>
+      <button class="btn btn-default profileSideButton" ui-sref=".wishView">
+        <span style="color: #6f0000;"class ="glyphicon glyphicon-book profileIcon"></span>
+        View Wish-list
+      </button>
     </div>
+
+  </div>
 </div>
 
 

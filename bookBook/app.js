@@ -35,6 +35,15 @@ app.config(function($stateProvider, $urlRouterProvider){
             controller: 'profileController'
         })
 
+                .state('profile.sellView',{
+                  url:'/sellView',
+                  templateUrl: 'views/profileSubViews/sellView.html'
+                })
+                .state('profile.wishView',{
+                  url:'/wishView',
+                  templateUrl: 'views/profileSubViews/wishView.html'
+                })
+
         .state('buySearch', {
             url:'/buySearch',
             templateUrl: 'views/buySearch.html',

@@ -164,5 +164,12 @@ body > .container {
 
 .profileSideButton {
 
-  width: 200px;
+  width: 220px;
 }
+
+.profileIcon {
+  width: 20px;
+  float: left;
+}
+
+
