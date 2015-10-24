@@ -1,9 +1,11 @@
 <ul class="book-list">
     <li class="book" ng-repeat="book in books | orderBy : 'price'">
         <div class="book-info">
-            <span class="title">{{ book.title }}</span>
-            <span class="isbn">{{ book.isbn }}</span>
-            <span class="author">{{ book.author }}</span>
+            <div>
+              <span class="title">{{ book.title }}</span>
+              <span class="isbn">{{ book.isbn }}</span>
+              <span class="author">{{ book.author }}</span>
+            </div>
             <span class="price pull-right">{{( book.price || 'Free') | currency }}</span>
         </div>
         <div class="actions" ng-show="editable">

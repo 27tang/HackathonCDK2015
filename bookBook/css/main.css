@@ -90,6 +90,10 @@ body > .container {
   margin: 1em 0;
 }
 .book-list > .book > .book-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   flex: 1;
 }
 .book-list > .book .title {
