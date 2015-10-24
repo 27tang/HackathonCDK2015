@@ -49,6 +49,12 @@ app.config(function($stateProvider, $urlRouterProvider){
           templateUrl: 'views/bookManager.html',
           controller: 'bookManagerController'
         })
+        .state('bookList', {
+            url:'/bookList',
+            templateUrl: 'views/bookList.html',
+            controller: 'BookcontrollerCtrl'
+        })
+
 
 
 

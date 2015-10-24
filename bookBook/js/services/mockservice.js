@@ -1,8 +1,12 @@
 'use strict';
 
-angular.module('bookBook')
-  .service('mockService', function ($http) {
-    this.getBooks  = function() {
-      return $http.get('../data/books.json');
+app.service('mockService', function ($http, $q) {
+    this.getBooks = function () {
+        var def = $q.defer();
+        $http.get('data/books.json').success(function (data) {
+            def.resolve(data);
+        });
+
+        return def.promise;
     }
-  });
+});

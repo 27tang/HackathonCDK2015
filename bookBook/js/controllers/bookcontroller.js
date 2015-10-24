@@ -7,8 +7,9 @@
  * # BookcontrollerCtrl
  * Controller of the bookBook
  */
-angular.module('bookBook')
-  .controller('BookcontrollerCtrl'['$scope', 'mockService', function ($scope, mockService) {
-    $scope.books= mockService.getBooks();
-    console.log(books);
-  }]);
+app.controller('BookcontrollerCtrl', ['$scope', 'mockService', function ($scope, mockService) {
+    mockService.getBooks().then(function(data){
+        $scope.books = data;
+        console.log($scope.books);
+    });
+}]);
