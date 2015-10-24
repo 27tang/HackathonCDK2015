@@ -7,7 +7,7 @@
  * # BookcontrollerCtrl
  * Controller of the bookBook
  */
-app.controller('BookcontrollerCtrl', ['$scope', 'mockService', function ($scope, mockService) {
+app.controller('BookcontrollerCtrl', ['$scope', 'mockService', '$state', function ($scope, mockService, $state) {
     mockService.getBooks().then(function (data) {
         $scope.books = data;
     });
@@ -41,5 +41,11 @@ app.controller('BookcontrollerCtrl', ['$scope', 'mockService', function ($scope,
         };
 
         mockService.addBook(book);
+    };
+
+    $scope.deleteBook = function(isbn) {
+        mockService.deleteBook(isbn);
+        console.log('AFASFA');
+        $state.go('/#/booklist');
     };
 }]);

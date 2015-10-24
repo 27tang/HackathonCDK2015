@@ -5,7 +5,8 @@
     "author": "David Lay",
     "condition": "poor",
     "price": 35,
-    "status": "selling"
+    "status": "selling",
+    "owner": "csnow"
   },
   {
     "title": "Tree Care 101",
@@ -13,7 +14,8 @@
     "author": "Bob Ross",
     "condition": "new",
     "price": 15,
-    "status": "selling"
+    "status": "selling",
+    "owner": "csnow"
   },
   {
     "title": "How To Make Breakfast",
@@ -21,7 +23,8 @@
     "author": "Collin Errie",
     "condition": "ok",
     "price": 23,
-    "status": "selling"
+    "status": "selling",
+    "owner": "marchuk3"
   },
   {
     "title": "How To Think",
@@ -29,7 +32,8 @@
     "author": "Thomas S. Brain",
     "condition": "",
     "price": 0,
-    "status": "buying"
+    "status": "buying",
+    "owner": "marchuk3"
   },
   {
     "title": "Intro to Theory",
@@ -37,7 +41,8 @@
     "author": "Michael Sipser",
     "condition": "",
     "price": 0,
-    "status": "buying"
+    "status": "buying",
+    "owner": "trakin"
   },
   {
     "title": "Algorithms and Complexity",
@@ -45,6 +50,7 @@
     "author": "Matthew McConaughey",
     "condition": "new",
     "price": 0,
-    "status": "selling"
+    "status": "selling",
+    "owner": "jschmoe"
   }
 ]
