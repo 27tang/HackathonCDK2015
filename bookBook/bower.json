@@ -1,0 +1,9 @@
+{
+  "name": "BookBook",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "^3.2.0"
+  },
+  "appPath": ".",
+  "moduleName": "BookBook"
+}
