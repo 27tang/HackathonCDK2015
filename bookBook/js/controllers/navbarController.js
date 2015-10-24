@@ -15,6 +15,10 @@ app.controller('navbarController', ['$scope', '$state', 'mockService', function(
     $scope.loggedIn = loggedIn == true;
   });
 
+  $scope.$watch(function () { return mockService.getSearchQuery(); }, function (query) {
+    $scope.query = query;
+  });
+
   $scope.$watch(function () { return $state.current; }, function (newState) {
     if (newState === undefined) return;
     $scope.onLoginPage = newState.name === 'odinLoginPage';

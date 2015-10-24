@@ -3,6 +3,7 @@
 app.service('mockService', function ($http, $q) {
     var bookList = [];
     var userList = [];
+    var searchQuery = "";
     var searchResults = null;
     var loggedIn = false;
 
@@ -87,6 +88,7 @@ app.service('mockService', function ($http, $q) {
     };
 
     this.search = function (query) {
+        searchQuery = query;
         var results = [];
         for (var i = 0; i < bookList.length; i++) {
             if (fuzzy_match(bookList[i].isbn.toString(), query) || fuzzy_match(bookList[i].title, query)) {
@@ -110,6 +112,10 @@ app.service('mockService', function ($http, $q) {
               str.toLowerCase().indexOf(pattern.toLowerCase()) > -1);
         };
     })();
+
+    this.getSearchQuery = function () {
+        return searchQuery;
+    };
 
     this.getSearchResults = function () {
         return searchResults;
