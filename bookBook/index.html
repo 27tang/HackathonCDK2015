@@ -30,12 +30,15 @@
       </div>
 
       <div class="collapse navbar-collapse" id="js-navbar-collapse">
-        <form class="navbar-form navbar-left search" role="search" ng-hide="onSearchPage" ng-submit="submit()">
-          <div>
+        <form class="navbar-form navbar-left search" role="search" ng-cloak ng-hide="onSearchPage" ng-submit="submit()">
+          <div ng-hide="onLoginPage">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search for a book" ng-model="query">
             </div>
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </div>
+          <div class="login" ng-show="onLoginPage">
+            <span class="text-muted">Authenticating with <span style="font-style: italic; font-weight: bold;">https://sso.pdx.edu</span></span>
           </div>
         </form>
         <div ng-show="onSearchPage" style="flex: 1;"></div>

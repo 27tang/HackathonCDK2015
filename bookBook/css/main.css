@@ -24,6 +24,7 @@ body {
 #js-navbar-collapse {
   display: flex !important;
   flex-direction: row;
+  height: 50px !important;
 }
 form.search {
   display: flex;
