@@ -50,6 +50,7 @@ form.search button{
   border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -73,7 +74,7 @@ body > .container {
 }
 #buySearch > a,
 #sellSearch > a {
-  display: block;
+  display: inline-block;
   margin-top: 1.5em;
 }
 
