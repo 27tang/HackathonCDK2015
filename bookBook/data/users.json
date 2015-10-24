@@ -2,7 +2,7 @@
   {
     "username": "csnow",
     "name": "Chance Snow",
-    "major": "CS",
+    "major": "Computer Science",
     "course_history": [
       "CS350",
       "CS311",
@@ -20,7 +20,7 @@
   {
     "username": "marchuk3",
     "name": "Max Marchuk",
-    "major": "MTH",
+    "major": "Math",
     "course_history": [
       "MTH261",
       "ECE341",
@@ -35,9 +35,9 @@
 
   },
   {
-    "username": "ytang",
-    "name": "Xuan Tang",
-    "major": "CS",
+    "username": "trakin",
+    "name": "Timmy Rakin",
+    "major": "Computer Science",
     "course_history": [
       "CS321",
       "CS322",
@@ -46,7 +46,7 @@
     "books": [
       6
     ],
-    "aboutMe": "BookBook changed my life. I used to pay out the A at the bookstore, "
+    "aboutMe": "BookBook changed my life. I used to pay out the A at the bookstore, but now... now my burrito budget runneth over."
 
   },
   {
