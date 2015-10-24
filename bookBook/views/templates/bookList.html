@@ -1,15 +1,17 @@
 <ul class="book-list">
     <li class="book" ng-repeat="book in books | orderBy : 'price'">
         <div class="book-info">
-            <span class="title">{{ book.title }}</span>
-            <span class="isbn">{{ book.isbn }}</span>
-            <span class="author">{{ book.author }}</span>
+            <div>
+              <span class="title">{{ book.title }}</span>
+              <span class="author">{{ book.author }}</span>
+                <span class="isbn">{{ book.isbn }}</span>
+            </div>
             <span class="price pull-right">{{( book.price || 'Free') | currency }}</span>
         </div>
-        <div class="actions" ng-show="editable">
-            <a href="mailto:{{ book.owner }}@pdx.edu?subject=BookBook" class="btn btn-info" title="mail"><span class="glyphicon glyphicon-envelope"></span></a>
-            <button ng-href='#/bookList' ng-click="deleteBook(book.isbn)" class="btn btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>
-            <a href="#/book/{{ book.isbn }}" class="btn btn-default" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a>
+        <div class="actions">
+            <a ng-show="buyable" href="mailto:{{ book.owner }}@pdx.edu?subject=BookBook" class="btn btn-info" title="mail"><span class="glyphicon glyphicon-envelope"></span></a>
+            <button ng-show="editable" ng-href='#/bookList' ng-click="deleteBook(book.isbn)" class="btn btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>
+            <a ng-show="editable" href="#/book/{{ book.isbn }}" class="btn btn-default" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a>
         </div>
     </li>
 </ul>

@@ -90,6 +90,10 @@ body > .container {
   margin: 1em 0;
 }
 .book-list > .book > .book-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   flex: 1;
 }
 .book-list > .book .title {
@@ -98,7 +102,8 @@ body > .container {
 }
 .book-list > .book .isbn {
   color: #999999;
-  margin-left: 0.375em;
+  display: block;
+  /*margin-left: 0.375em;*/
 }
 .book-list > .book .author {
   display: block;
@@ -106,6 +111,7 @@ body > .container {
 
 .book-list > .book .price {
   color: #999999;
+  margin-right: 0.5em;
 }
 
 /* Custom page footer */

@@ -1,13 +1,9 @@
-<div style="background-color: transparent">
-  <a style="padding: 20px">
-    <button style="align-content: center; display: inline-block" class="btn btn-primary" ui-sref="buySearch">
-      Buy Book
-    </button>
-  </a>
-  <a style="padding: 20px;">
-    <button style="align-content: center; display: inline-block" class="btn btn-primary" ui-sref="sellSearch">
-      Sell Book
-    </button>
-  </a>
+<div class="col-md-3" style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: static; height: 80vh">
+  <button style="margin: 1.5em 0;" class="btn btn-lg btn-primary" ui-sref="buySearch">
+    Buy Book
+  </button>
+  <button style="margin: 1.5em 0;" class="btn btn-lg btn-primary" ui-sref="sellSearch">
+    Sell Book
+  </button>
 </div>
-<book-list books="bookList"></book-list>
+<book-list class="col-md-9" books="bookList" buyable="true"></book-list>
