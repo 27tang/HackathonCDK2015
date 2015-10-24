@@ -26,30 +26,25 @@ body {
   display: flex !important;
   flex-direction: row;
 }
-#js-navbar-collapse > form,
-#buySearch > form{
+form.search {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
-#js-navbar-collapse > form > div,
-#buySearch > form > div {
+form.search > div {
   position: relative;
   width: 55%;
 }
-#js-navbar-collapse > form div.form-group,
-#buySearch > form div.form-group {
+form.search div.form-group {
   width: 100%;
 }
-#js-navbar-collapse > form input,
-#buySearch > form input {
+form.search input {
   padding-right: 40px;
-  width: 100%;
+  width: 100% !important;
 }
-#js-navbar-collapse > form button,
-#buySearch > form button{
+form.search button{
   position: absolute;
   bottom: 1px;
   right: 1px;
@@ -69,7 +64,8 @@ body > .container {
   margin-bottom: 30px;
 }
 
-#buySearch {
+#buySearch,
+#sellSearch {
   text-align: center;
 }
 #buySearch > h1 {
