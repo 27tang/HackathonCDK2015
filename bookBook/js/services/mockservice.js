@@ -105,7 +105,9 @@ app.service('mockService', function ($http, $q) {
         });
         return function(str, pattern){
             return cache(str).test(pattern) ||
-              str.toLowerCase().search(pattern.toLowerCase()) > -1;
+              str.toLowerCase().search(pattern.toLowerCase()) > -1 ||
+              str.toLowerCase().includes(pattern.toLowerCase() ||
+              str.toLowerCase().indexOf(pattern.toLowerCase()) > -1);
         };
     })();
 

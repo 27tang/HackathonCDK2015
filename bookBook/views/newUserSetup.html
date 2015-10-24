@@ -2,12 +2,13 @@
   <form class="form-horizontal" action='' method="POST">
     <fieldset>
       <div id="legend">
-        <legend class="">Timmy Rakin</legend>
+        <legend class="">traken</legend>
       </div>
+      <div class="col-md-8">
       <div>
         <label class="control-label">Display Name</label>
         <div>
-          <input type="text" name="username" >
+          <input type="text" class="form-control" name="username" >
           <p class="help-block">Please enter your preferred display name</p>
         </div>
       </div>
@@ -15,7 +16,7 @@
       <div class="control-group">
         <label class="control-label">Major</label>
         <div class="controls">
-          <input type="text" name="username" class="input-xlarge" ng-model="major">
+          <input type="text" class="form-control" name="username" class="input-xlarge" ng-model="major">
           <p class="help-block">Please provide your major</p>
         </div>
       </div>
@@ -42,6 +43,7 @@
         <div class="controls">
           <button class="btn btn-success" ui-sref="landing">Submit</button>
         </div>
+      </div>
       </div>
     </fieldset>
   </form>
