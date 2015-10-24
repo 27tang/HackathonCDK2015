@@ -24,7 +24,8 @@ app.directive('bookList', ['$parse', function ($parse) {
     return {
         restrict: 'E',
         scope: {
-            books: '='
+            books: '=',
+            buyable: '='
         },
         link: link,
         //compile: compile,
