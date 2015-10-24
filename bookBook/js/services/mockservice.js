@@ -10,7 +10,7 @@ app.service('mockService', function ($http, $q) {
         var def = $q.defer();
         $http.get('data/books.json').success(function (data) {
             def.resolve(data);
-            bookList = _.union(data, bookList);
+            bookList = data;
         });
         return def.promise;
     };
