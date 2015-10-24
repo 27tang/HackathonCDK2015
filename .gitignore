@@ -3,5 +3,5 @@
 /.tmp
 /.sass-cache
 /bower_components
-.idea
+.idea/
 bookBook/components
