@@ -104,6 +104,10 @@ body > .container {
   display: block;
 }
 
+.book-list > .book .price {
+  color: #999999;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;

@@ -59,6 +59,11 @@ app.config(function($stateProvider, $urlRouterProvider){
             templateUrl: 'views/bookList.html',
             controller: 'BookcontrollerCtrl'
         })
+        .state('book', {
+            url: '/profile/:isbn',
+            templateUrl: 'views/book.html',
+            controller: 'BookCtrl'
+        })
         .state('newUserSetup', {
             url:'/newUserSetup',
             templateUrl: 'views/newUserSetup.html',
