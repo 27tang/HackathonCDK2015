@@ -14,7 +14,7 @@ app.config(function($httpProvider){
 });
 
 app.config(function($stateProvider, $urlRouterProvider){
-    $urlRouterProvider.otherwise('/mainMenu');
+    $urlRouterProvider.otherwise('/landing');
 
     $stateProvider
 
@@ -43,6 +43,15 @@ app.config(function($stateProvider, $urlRouterProvider){
             controller: 'sellSearchController'
 
         })
+
+        .state('bookManager', {
+          url:'/bookmanager',
+          templateUrl: 'views/bookManager.html',
+          controller: 'bookManagerController'
+        })
+
+
+
 
 
     /*
