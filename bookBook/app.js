@@ -58,6 +58,18 @@ app.config(function($stateProvider, $urlRouterProvider){
 
         })
 
+        .state('buySearchResults', {
+            url:'/buySearchResults',
+            templateUrl: 'views/buySearchResults.html',
+            controller: 'buySearchResultsController'
+        })
+
+        .state('sellSearchResults', {
+            url:'/sellSearchResults',
+            templateUrl: 'views/sellSearchResults.html',
+            controller: 'sellSearchResultsController'
+        })
+
         .state('bookManager', {
           url:'/bookmanager',
           templateUrl: 'views/bookManager.html',
