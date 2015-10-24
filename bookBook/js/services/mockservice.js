@@ -3,6 +3,7 @@
 app.service('mockService', function ($http, $q) {
     var bookList = [];
     var userList = [];
+    var searchResults = null;
 
     this.getBooks = function () {
         var def = $q.defer();
@@ -76,5 +77,31 @@ app.service('mockService', function ($http, $q) {
         }
     };
 
+    this.search = function (query) {
+        var results = [];
+        for (var i = 0; i < bookList.length; i++) {
+            if (fuzzy_match(bookList[i].isbn.toString(), query) || fuzzy_match(bookList[i].title, query)) {
+                results.push(bookList[i]);
+            }
+        }
+        searchResults = results;
+    };
+
+    // http://codereview.stackexchange.com/a/23905
+    var fuzzy_match = (function(){
+        var cache = _.memoize(function(str){
+            return new RegExp("^"+str.replace(/./g, function(x){
+                return /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/.test(x) ? "\\"+x+"?" : x+"?";
+            })+"$");
+        });
+        return function(str, pattern){
+            return cache(str).test(pattern) ||
+              str.toLowerCase().search(pattern.toLowerCase()) > -1;
+        };
+    })();
+
+    this.getSearchResults = function () {
+        return searchResults;
+    };
 
 });

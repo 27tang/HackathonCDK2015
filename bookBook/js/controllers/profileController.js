@@ -9,7 +9,6 @@ app.controller('profileController', ['$scope', '$state', 'mockService', function
             $scope.buyingList = [];
             $scope.sellingList = [];
             $scope.bookList = $scope.user.books.map(function (index) {
-                console.log(index);
                 var book = mockService.getBookByISBN(index);
                 if(book.status == 'buying'){
                     $scope.buyingList.push(book);

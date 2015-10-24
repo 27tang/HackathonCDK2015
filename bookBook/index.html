@@ -15,7 +15,7 @@
 <!-- Add your site or application content here -->
 <div class="header">
 
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="navbarController">
     <div class="container">
       <div class="navbar-header">
 
@@ -30,14 +30,15 @@
       </div>
 
       <div class="collapse navbar-collapse" id="js-navbar-collapse">
-        <form class="navbar-form navbar-left search" role="search">
+        <form class="navbar-form navbar-left search" role="search" ng-hide="onSearchPage" ng-submit="submit()">
           <div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="text" class="form-control" placeholder="Search for a book" ng-model="query">
             </div>
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
           </div>
         </form>
+        <div ng-show="onSearchPage" style="flex: 1;"></div>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Login</a></li>
         </ul>
@@ -71,8 +72,10 @@
 <script src="js/directives/bookDirective.js"></script>
 <script src="js/directives/bookListDirective.js"></script>
 
+<script src="js/controllers/navbarController.js"></script>
 <script src="js/controllers/landingController.js"></script>
 <script src="js/controllers/buySearchController.js"></script>
+<script src="js/controllers/buySearchResultsController.js"></script>
 <script src="js/controllers/profileController.js"></script>
 <script src="js/controllers/BookcontrollerController.js"></script>
 <script src="js/controllers/sellSearchController.js"></script>
