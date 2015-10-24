@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Intro to Linear Algebra",
+    "isbn": 1,
+    "author": "David Lay",
+    "condition": "poor",
+    "price": 50,
+    "status": "selling"
+  },
+  {
+    "title": "Tree Care 101",
+    "isbn": 2,
+    "author": "Bob Ross",
+    "condition": "new",
+    "price": 30,
+    "status": "selling"
+  },
+  {
+    "title": "How To Make Breakfast",
+    "isbn": 3,
+    "author": "Collin Errie",
+    "condition": "ok",
+    "price": 70,
+    "status": "selling"
+  },
+  {
+    "title": "",
+    "isbn": 4,
+    "author": "",
+    "condition": "",
+    "price": 0,
+    "status": "buying"
+  },
+  {
+    "title": "",
+    "isbn": 5,
+    "author": "",
+    "condition": "",
+    "price": 0,
+    "status": "buying"
+  },
+  {
+    "title": "Algorithms and Complexity",
+    "isbn": 6,
+    "author": "Matthew McConaughey",
+    "condition": "new",
+    "price": 0,
+    "status": "selling"
+  }
+]
