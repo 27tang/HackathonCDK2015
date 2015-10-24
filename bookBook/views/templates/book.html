@@ -1,0 +1,34 @@
+<div class="book">
+    <div class="book-info" ng-hide="editing">
+        <h1 class="title">{{ book.title }}</h1>
+        <span class="isbn">{{ book.isbn }}</span>
+        <span class="author">{{ book.author }}</span>
+        <span class="price">{{ book.price }}</span>
+    </div>
+    <form ng-show="editing" ng-submit="submit()">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Title" ng-model="title">
+        </div>
+        <div class="form-group">
+            <label for="isbn">ISBN</label>
+            <input type="text" class="form-control" id="isbn" placeholder="9783161484100" ng-model="isbn">
+        </div>
+        <div class="form-group">
+            <label for="author">Author(s)</label>
+            <input type="text" class="form-control" id="author" placeholder="Ayn Rand" ng-model="author">
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="number" class="form-control" id="price" placeholder="0.00" ng-model="price">
+            </div>
+        </div>
+        <!--div class="form-group">
+            <label for="condition">Condition</label>
+
+        </div-->
+        <button type="submit" class="btn btn-default">Save</button>
+    </form>
+</div>
