@@ -25,7 +25,7 @@ app.config(function($stateProvider, $urlRouterProvider){
         })
 
         .state('profile', {
-            url: '/profile',
+            url: '/profile/:userName',
             templateUrl: 'views/profile.html',
             controller: 'profileController'
         })
@@ -54,6 +54,11 @@ app.config(function($stateProvider, $urlRouterProvider){
             templateUrl: 'views/bookList.html',
             controller: 'BookcontrollerCtrl'
         })
+        .state('newUserSetup', {
+            url:'/newUserSetup',
+            templateUrl: 'views/newUserSetup.html',
+            controller: 'newUserSetupController'
+      })
 
 
 
