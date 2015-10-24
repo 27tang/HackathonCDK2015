@@ -1,7 +1,7 @@
 [
   {
     "title": "Intro to Linear Algebra",
-    "isbn": 1,
+    "isbn": 978113318660,
     "author": "David Lay",
     "condition": "poor",
     "price": 50,
@@ -9,7 +9,7 @@
   },
   {
     "title": "Tree Care 101",
-    "isbn": 2,
+    "isbn": 9781563187790,
     "author": "Bob Ross",
     "condition": "new",
     "price": 30,
@@ -17,31 +17,31 @@
   },
   {
     "title": "How To Make Breakfast",
-    "isbn": 3,
+    "isbn": 9341133187790,
     "author": "Collin Errie",
     "condition": "ok",
     "price": 70,
     "status": "selling"
   },
   {
-    "title": "",
-    "isbn": 4,
-    "author": "",
+    "title": "How To Think",
+    "isbn": 9745133189820,
+    "author": "Thomas S. Brain",
     "condition": "",
     "price": 0,
     "status": "buying"
   },
   {
-    "title": "",
-    "isbn": 5,
-    "author": "",
+    "title": "Intro to Theory",
+    "isbn": 9111133181110,
+    "author": "Michael Sipser",
     "condition": "",
     "price": 0,
     "status": "buying"
   },
   {
     "title": "Algorithms and Complexity",
-    "isbn": 6,
+    "isbn": 9983760187732,
     "author": "Matthew McConaughey",
     "condition": "new",
     "price": 0,
