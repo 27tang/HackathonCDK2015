@@ -1,6 +1,6 @@
 # BookBook
 
-BookBook is a hackathon project made for the PSU + CDK Global 24-hour hackaton built by [Chance Snow](https://github.com/chances), [27tang](https://github.com/27tang), and [Max Marchuk](https://github.com/maxmarchuk). BookBook is a webapp made with AngularJS designed to help students at Portland State University exchange textbooks.
+BookBook is a hackathon project made for the PSU + CDK Global 24-hour hackaton built by [Chance Snow](https://github.com/chances), [Yu Shyuan Tang](https://github.com/27tang), and [Max Marchuk](https://github.com/maxmarchuk). BookBook is a webapp made with AngularJS designed to help students at Portland State University exchange/sell textbooks.
 
 ### Technology
 BookBook uses a number of open source projects to work properly:
